@@ -1,0 +1,16 @@
+.year-dropdown-container {
+  display: flex;
+  align-items: center;
+}
+
+.year-dropdown-container label {
+  margin-right: 10px;
+}
+
+.year-dropdown {
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px; 
+}

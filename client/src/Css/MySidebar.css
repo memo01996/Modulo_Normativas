@@ -1,0 +1,63 @@
+/* Estilo general para el sidebar */
+.sidebar {
+  width: 200px; /* Ajusta esta anchura según necesites para tu diseño */
+  transition: width 0.2s; /* Transición suave al colapsar y expandir */
+  overflow: hidden; /* Oculta cualquier contenido que sobrepase el ancho del sidebar */
+}
+
+.logo {
+  height: 64px;
+  margin: 16px;
+}
+
+/* Estilo para los elementos del menú */
+.menu-bar .ant-menu-item,
+.menu-bar .ant-menu-submenu-title {
+  color: rgba(0, 0, 0, 0.65); /* Color del texto de los ítems */
+  white-space: nowrap; /* Asegúrate que el texto se quede en una sola línea */
+  overflow: hidden; /* Oculta texto que se desborde del ancho del ítem */
+  text-overflow: ellipsis;
+}
+
+/* Estilo para los íconos del menú */
+.menu-bar .ant-menu-item-icon,
+.menu-bar .ant-menu-submenu-icon {
+  color: rgba(255, 255, 255, 0.65); /* Color de los íconos */
+}
+
+/* Estilos para el ítem seleccionado */
+.menu-bar .ant-menu-item-selected {
+  background-color: #1890ff; /* Color de fondo para ítem seleccionado */
+}
+
+/* Estilos para hover en ítems del menú */
+.menu-bar .ant-menu-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Estilos para cuando el sidebar está colapsado */
+.ant-layout-sider-collapsed .logo,
+.ant-layout-sider-collapsed .menu-bar {
+  display: none; /* Esconde logo y menú cuando está colapsado */
+}
+
+/* Asegurarse que el texto de los ítems no se corte */
+.menu-bar .ant-menu-item,
+.menu-bar .ant-menu-submenu-title {
+  white-space: nowrap;
+  overflow: hidden;
+  
+}
+
+/* Ajustes para el texto del menú cuando el sidebar está colapsado */
+.ant-layout-sider-collapsed .menu-bar .ant-menu-item,
+.ant-layout-sider-collapsed .menu-bar .ant-menu-submenu-title {
+  text-align: center; /* Centra el texto cuando está colapsado si lo prefieres */
+  padding: 0 10px; /* Ajusta el padding para el texto colapsado */
+}
+
+/* Ajustes para los íconos del menú cuando el sidebar está colapsado */
+.ant-layout-sider-collapsed .menu-bar .ant-menu-item-icon,
+.ant-layout-sider-collapsed .menu-bar .ant-menu-submenu-icon {
+  margin-right: 0; /* Elimina el margen derecho cuando está colapsado */
+}

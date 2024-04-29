@@ -1,0 +1,41 @@
+/* App.css */
+
+/* Estilo del contenedor principal */
+.App {
+  text-align: center;
+}
+
+/* Estilo global para el Layout de Ant Design */
+.ant-layout {
+  background: #ffffff;
+}
+
+/* Sidebar */
+.sidebar {
+  background-color: #001529; /* Color de fondo para el tema oscuro */
+  color: #fff; /* Color del texto */
+}
+
+/* Estilos para el Header del Layout */
+.site-layout-background {
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+  background: #ffffff; /* Fondo blanco para el Header */
+}
+
+/* Estilos para el botón de colapso */
+.toggle-button {
+  margin-left: 16px;
+  color: rgba(0, 0, 0, 0.65); /* Color del ícono */
+  font-size: 16px; /* Tamaño del ícono */
+  line-height: 0; /* Ajustar la alineación vertical del ícono */
+}
+
+/* Estilos para el Content del Layout */
+.site-layout .site-layout-content {
+  margin: 24px 16px;
+  padding: 24px;
+  background: #fff; /* Fondo blanco para el área de contenido */
+  min-height: 280px; /* Altura mínima para el contenido */
+}

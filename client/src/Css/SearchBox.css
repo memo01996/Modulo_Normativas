@@ -1,0 +1,11 @@
+.search-box-container {
+  position: relative;
+  align-self: flex-end; /* Alinea el contenedor a la derecha */
+}
+
+.search-box {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}

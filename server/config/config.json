@@ -1,0 +1,22 @@
+{
+  "development": {
+    "username": "guillermo.sandoval",
+    "password": "dP5YAFoyn8Spmf1Sj8QR",
+    "database": "SISNORM",
+    "host": "10.10.10.54",
+    "dialect": "mssql",
+    "dialectOptions": {
+      "options": {
+        "encrypt": true,
+        "trustServerCertificate": true,
+        "enableArithAbort": true
+      }
+    }
+  },
+  "test": {
+    
+  },
+  "production": {
+
+  }
+}

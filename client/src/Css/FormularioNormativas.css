@@ -1,0 +1,156 @@
+.formulario-normativas-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1070px;
+  margin: auto;
+  padding: 2px;
+  margin-left: 10px;
+}
+
+.dropdowns-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
+}
+
+.select-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem; /* Ajustar el tamaño del texto/icono si es necesario */
+}
+
+.select-button.selected {
+  background-color: #4caf50; /* Verde o el color que prefieras para el estado seleccionado */
+}
+
+.delete-button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+}
+
+.delete-button:hover {
+  background-color: #ff3333; /* Un poco más oscuro al pasar el ratón por encima */
+}
+
+table .selected {
+  background-color: #e0ffe0; /* Un color de fondo para indicar selección */
+}
+
+.search-box-container {
+  order: -1; /* Para asegurar que el cuadro de búsqueda venga después del dropdown */
+  align-self: end;
+  flex-grow: 1;
+  margin-right: 20px;
+}
+
+.search-box-container input {
+  width: auto; /* O '100%' si quieres que ocupe todo el espacio disponible */
+  flex-grow: 1; /* Permite que el input crezca para llenar el espacio disponible */
+}
+
+.content-container {
+  display: flex;
+  gap: 20px; /* Espacio entre la tabla y el formulario */
+}
+
+.normativas-table-container {
+  flex: 1;
+  max-width: calc(80% - 5px); /* Resta el ancho del formulario del 100% */
+}
+
+.formulario-normativas {
+  width: 400px; /* Ancho fijo para el formulario */
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  align-self: flex-start;
+  margin-top: 85px;
+}
+
+.formulario-normativas form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.formulario-normativas input,
+.formulario-normativas select,
+.formulario-normativas textarea,
+.formulario-normativas button {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.formulario-normativas button {
+  padding: 8px;
+  border: 10px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  margin: 6px;
+  margin-top: 20px;
+  cursor: pointer;
+  outline: none;
+}
+
+/* Estilo específico para el botón Guardar */
+.formulario-normativas .save-button {
+  width: 112px;
+  background-color: #4caf50; 
+  color: white;
+  border: none;
+}
+
+/* Cambiar el color de fondo al pasar el ratón por encima del botón Guardar */
+.formulario-normativas .save-button:hover {
+  background-color: #367c2b;
+}
+
+/* Estilo específico para el botón Derrogar */
+.formulario-normativas .delete-button {
+  width: 100px;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+}
+
+/* Cambiar el color de fondo al pasar el ratón por encima del botón Derrogar */
+.formulario-normativas .delete-button:hover {
+  background-color: #ff3333;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+  .content-container {
+    flex-direction: column;
+  }
+
+  .normativas-table-container {
+    max-width: 100%;
+    order: 2; /* La tabla se mueve debajo del formulario en pantallas pequeñas */
+  }
+
+  .formulario-normativas {
+    order: 1; /* El formulario se mueve arriba en pantallas pequeñas */
+    width: 100%; /* El formulario toma todo el ancho en pantallas pequeñas */
+    margin-bottom: 20px;
+  }
+
+  .search-box-container {
+    order: 3; /* El cuadro de búsqueda se mueve abajo del todo en pantallas pequeñas */
+    width: 100%; /* El cuadro de búsqueda toma todo el ancho en pantallas pequeñas */
+    align-self: center;
+  }
+}
